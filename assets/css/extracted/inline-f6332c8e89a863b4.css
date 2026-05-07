@@ -1,0 +1,57 @@
+/* Extracted from inline WordPress/Elementor CSS. */
+.stati-intro{
+  width:100%;
+  padding:42px 16px;
+  background:#f8fafc;
+  font-family:Arial,sans-serif;
+  box-sizing:border-box;
+}
+
+.stati-intro__wrap{
+  max-width:1100px;
+  margin:0 auto;
+  background:#ffffff;
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 12px 34px rgba(0,0,0,0.06);
+  border-left:6px solid #0BC7DB;
+}
+
+.stati-intro h1{
+  margin:0 0 18px;
+  font-size:36px;
+  line-height:1.2;
+  color:#111827;
+}
+
+.stati-intro p{
+  margin:0 0 16px;
+  font-size:18px;
+  line-height:1.65;
+  color:#334155;
+}
+
+.stati-intro p:last-child{
+  margin-bottom:0;
+}
+
+@media(max-width:768px){
+  .stati-intro{
+    padding:28px 12px;
+  }
+
+  .stati-intro__wrap{
+    padding:24px 18px;
+    border-radius:18px;
+  }
+
+  .stati-intro h1{
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .stati-intro p{
+    font-size:16px;
+    line-height:1.55;
+  }
+}

@@ -1,0 +1,163 @@
+/* Extracted from inline WordPress/Elementor CSS. */
+.services-catalog {
+  --brand: #0BC7DB;
+  --brand-dark: #0798aa;
+  --text: #17212b;
+  --muted: #60717d;
+  --soft: #f4fcfd;
+  --line: rgba(11, 199, 219, 0.22);
+
+  width: 100%;
+  padding: 60px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fdfe 100%);
+  font-family: Arial, sans-serif;
+  color: var(--text);
+}
+
+.services-catalog * {
+  box-sizing: border-box;
+}
+
+.services-catalog__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.services-catalog__head {
+  max-width: 850px;
+  margin-bottom: 30px;
+}
+
+.services-catalog__head span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(11, 199, 219, 0.12);
+  border: 1px solid var(--line);
+  color: var(--brand-dark);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.services-catalog__head h1 {
+  margin: 0 0 16px;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.services-catalog__head p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.services-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.services-catalog__card {
+  display: block;
+  padding: 24px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(23, 33, 43, 0.06);
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.2s ease;
+}
+
+.services-catalog__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand);
+  box-shadow: 0 20px 46px rgba(23, 33, 43, 0.1);
+}
+
+.services-catalog__card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.services-catalog__card p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.services-catalog__note {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  color: #ffffff;
+}
+
+.services-catalog__note h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.services-catalog__note p {
+  max-width: 760px;
+  margin: 0 0 18px;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.92);
+}
+
+.services-catalog__note a {
+  display: inline-flex;
+  padding: 13px 20px;
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--brand-dark);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .services-catalog {
+    padding: 42px 0;
+  }
+
+  .services-catalog__wrap {
+    padding: 0 14px;
+  }
+
+  .services-catalog__head h1 {
+    font-size: 30px;
+  }
+
+  .services-catalog__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-catalog__card {
+    padding: 22px;
+  }
+
+  .services-catalog__card h2 {
+    font-size: 20px;
+  }
+
+  .services-catalog__note {
+    padding: 24px;
+  }
+
+  .services-catalog__note h2 {
+    font-size: 24px;
+  }
+}

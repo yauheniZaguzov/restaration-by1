@@ -1,0 +1,27 @@
+/* Extracted from inline WordPress/Elementor CSS. */
+/* визуал для доп. кнопок и выделений */
+.dop-btn a {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease, color .12s ease;
+  border: 1px solid transparent;
+}
+.dop-btn a.selected {
+  background: #0BC7DB;
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(11,199,219,0.12);
+}
+.my-card.selected, .my-size-card.selected {
+  outline: none;
+  box-shadow: 0 12px 28px rgba(11,199,219,0.08);
+  border-radius: 8px;
+}
+/* стиль отключённой кнопки заказа */
+.my-scales-disabled {
+  pointer-events: none !important;
+  opacity: 0.45 !important;
+}

@@ -1,0 +1,56 @@
+/* Extracted from inline WordPress/Elementor CSS. */
+.price-intro{
+  width:100%;
+  padding:42px 16px;
+  background:#f8fafc;
+  font-family:Arial,sans-serif;
+  box-sizing:border-box;
+}
+
+.price-intro__wrap{
+  max-width:1100px;
+  margin:0 auto;
+  background:#ffffff;
+  border-radius:24px;
+  padding:34px;
+  box-shadow:0 12px 34px rgba(0,0,0,0.06);
+  border-left:6px solid #0BC7DB;
+}
+
+.price-intro h1{
+  margin:0 0 18px;
+  font-size:36px;
+  line-height:1.2;
+  color:#111827;
+}
+
+.price-intro p{
+  margin:0 0 16px;
+  font-size:18px;
+  line-height:1.65;
+  color:#334155;
+}
+
+.price-intro p:last-child{
+  margin-bottom:0;
+}
+
+@media(max-width:768px){
+  .price-intro{
+    padding:28px 12px;
+  }
+
+  .price-intro__wrap{
+    padding:24px 18px;
+    border-radius:18px;
+  }
+
+  .price-intro h1{
+    font-size:28px;
+  }
+
+  .price-intro p{
+    font-size:16px;
+    line-height:1.55;
+  }
+}
