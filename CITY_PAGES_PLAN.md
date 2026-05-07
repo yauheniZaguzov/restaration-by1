@@ -16,6 +16,9 @@ Goal: improve only newly created city pages so they are not thin duplicate pages
 - Done: improved `/filialy/` city-link layout with `assets/css/filialy-page.css`.
 - Done: extracted inline CSS into files under `assets/css/extracted/`.
 - Done: added a unique first-screen city hero to priority pages: `/pinsk/`, `/novopolock/`, `/polock/`, `/slonim/`, `/smorgon/`, `/rechica/`, `/rogachev/`, `/pruzhany/`, `/postavy/`, `/fanipol/`.
+- Done: user marked indexed/important pages as do-not-touch: `/fanipol/`, `/pinsk/`, `/polock/`, `/slonim/`, `/dzerzhinsk/`, `/gantsevichi/`.
+- Done: removed the new city hero from do-not-touch pages: `/fanipol/`, `/pinsk/`, `/polock/`, `/slonim/`.
+- To do: fix Gantsevichi slug conflict: project currently has `/gancevichi/`, but the main indexed URL is `/gantsevichi/`.
 - To do: improve priority city pages with FAQ and deeper internal linking.
 - To do: decide whether weak template-like city pages should temporarily use `noindex`.
 
@@ -32,6 +35,12 @@ These pages had old Rank Math SEO in the WordPress database. Keep their old titl
 - `/mozyr/`
 - `/svisloch/`
 - `/slutsk/`
+- `/fanipol/`
+- `/pinsk/`
+- `/polock/`
+- `/slonim/`
+- `/dzerzhinsk/`
+- `/gantsevichi/`
 
 ## New Pages To Improve
 
