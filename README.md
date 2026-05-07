@@ -2,6 +2,8 @@
 
 Static HTML export of the former WordPress site.
 
+Article pages restored from the old WordPress export.
+
 ## Telegram form variables
 
 Set these in Vercel Project Settings -> Environment Variables:
