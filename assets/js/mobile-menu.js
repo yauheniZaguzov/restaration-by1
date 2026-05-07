@@ -26,6 +26,8 @@
     menu.style.setProperty('max-width', '100vw', 'important');
     menu.style.setProperty('max-height', open ? 'calc(100vh - ' + top + 'px)' : '0px', 'important');
     menu.style.setProperty('transform', open ? 'scaleY(1)' : 'scaleY(0)', 'important');
+    menu.style.setProperty('transition', 'none', 'important');
+    menu.style.setProperty('animation', 'none', 'important');
     menu.style.setProperty('overflow-y', open ? 'auto' : 'hidden', 'important');
     menu.style.setProperty('overflow-x', 'hidden', 'important');
     menu.style.setProperty('z-index', '99999', 'important');
