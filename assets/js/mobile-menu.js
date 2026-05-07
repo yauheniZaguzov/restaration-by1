@@ -10,19 +10,25 @@
   function setMenu(toggle, open) {
     var menu = findMenu(toggle);
     if (!menu) return;
+    var header = toggle.closest ? toggle.closest('header') : null;
+    var rect = (header || toggle).getBoundingClientRect();
+    var top = Math.max(0, Math.round(rect.bottom));
 
     toggle.classList.toggle('elementor-active', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     menu.setAttribute('aria-hidden', open ? 'false' : 'true');
-    menu.style.boxSizing = 'border-box';
-    menu.style.left = '0';
-    menu.style.right = '0';
-    menu.style.width = '100vw';
-    menu.style.maxWidth = '100vw';
-    menu.style.maxHeight = open ? '100vh' : '0px';
-    menu.style.transform = open ? 'scaleY(1)' : 'scaleY(0)';
-    menu.style.overflowY = open ? 'auto' : 'hidden';
-    menu.style.overflowX = 'hidden';
+    menu.style.setProperty('box-sizing', 'border-box', 'important');
+    menu.style.setProperty('position', open ? 'fixed' : 'absolute', 'important');
+    menu.style.setProperty('top', open ? top + 'px' : '', 'important');
+    menu.style.setProperty('left', '0', 'important');
+    menu.style.setProperty('right', '0', 'important');
+    menu.style.setProperty('width', '100vw', 'important');
+    menu.style.setProperty('max-width', '100vw', 'important');
+    menu.style.setProperty('max-height', open ? 'calc(100vh - ' + top + 'px)' : '0px', 'important');
+    menu.style.setProperty('transform', open ? 'scaleY(1)' : 'scaleY(0)', 'important');
+    menu.style.setProperty('overflow-y', open ? 'auto' : 'hidden', 'important');
+    menu.style.setProperty('overflow-x', 'hidden', 'important');
+    menu.style.setProperty('z-index', '99999', 'important');
 
     menu.querySelectorAll('a').forEach(function (link) {
       link.setAttribute('tabindex', open ? '0' : '-1');
