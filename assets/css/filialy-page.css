@@ -1,0 +1,60 @@
+﻿body.page-id-20 main#content .elementor-widget-heading h2 {
+  margin-bottom: 22px;
+  color: #101828;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+body.page-id-20 main#content .elementor-widget-text-editor ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.page-id-20 main#content .elementor-widget-text-editor li {
+  margin: 0;
+  padding: 0;
+}
+
+body.page-id-20 main#content .elementor-widget-text-editor li a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #d9e6ea;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #101828;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: border-color .15s ease, box-shadow .15s ease, color .15s ease;
+}
+
+body.page-id-20 main#content .elementor-widget-text-editor li a:hover,
+body.page-id-20 main#content .elementor-widget-text-editor li a:focus {
+  border-color: #0bc7db;
+  box-shadow: 0 8px 22px rgba(11, 199, 219, .16);
+  color: #0898a8;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  body.page-id-20 main#content .elementor-widget-heading h2 {
+    font-size: 24px;
+  }
+
+  body.page-id-20 main#content .elementor-widget-text-editor ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  body.page-id-20 main#content .elementor-widget-text-editor li a {
+    min-height: 42px;
+    padding: 9px 10px;
+    font-size: 14px;
+  }
+}
