@@ -16,7 +16,8 @@ Goal: restore important article pages from the old WordPress site and fix `/stat
 - Done: checked restored article pages: files exist, H1 exists, canonical URLs are present.
 - Done: fixed `/stati/` card/image links so restored article pages open in the same tab.
 - Done: added a clean article-link block at the top of `/stati/` with 15 direct working links, bypassing old Elementor click-layer issues.
-- To do: check restored pages for title, description, canonical, images and mobile layout.
+- Done: updated restored article pages with site-style menu, callback button, breadcrumbs, Open Graph and Twitter SEO fields.
+- To do: check restored article pages on mobile after Vercel deploy.
 
 ## Important Article URLs To Restore
 

@@ -20,7 +20,7 @@
 }
 
 .article-header__inner {
-  min-height: 74px;
+  min-height: 78px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,8 +28,12 @@
 }
 
 .article-brand {
+  display: flex;
+  flex-direction: column;
+  min-width: 132px;
   color: #111827;
   font-weight: 800;
+  line-height: 1.05;
   text-decoration: none;
 }
 
@@ -43,18 +47,68 @@
 .article-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  justify-content: center;
+  gap: 16px;
+  flex: 1;
   font-size: 14px;
 }
 
 .article-nav a {
+  padding: 8px 0;
   color: #111827;
+  font-weight: 600;
   text-decoration: none;
 }
 
+.article-nav a:hover,
+.article-nav a:focus {
+  color: #0aa9bb;
+  outline: none;
+}
+
+.article-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .article-phone {
-  color: #0ab7c9;
+  color: #111827;
   font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.article-callback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: #0ab7c9;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.article-callback:hover,
+.article-callback:focus {
+  background: #0896a5;
+  color: #fff;
+  outline: none;
+}
+
+.article-breadcrumbs {
+  margin: 0 0 18px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.article-breadcrumbs a {
+  color: #0aa9bb;
   text-decoration: none;
 }
 
@@ -131,7 +185,7 @@
   .article-header__inner {
     min-height: auto;
     padding: 14px 0;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
     gap: 10px;
   }
@@ -142,6 +196,11 @@
     gap: 14px;
     padding-bottom: 4px;
     white-space: nowrap;
+  }
+
+  .article-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .article-main {

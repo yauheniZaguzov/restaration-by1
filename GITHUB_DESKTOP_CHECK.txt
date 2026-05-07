@@ -1,1 +1,0 @@
-If GitHub Desktop shows this file, it is opened on the correct working folder.
