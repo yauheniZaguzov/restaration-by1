@@ -18,7 +18,8 @@ Goal: restore important article pages from the old WordPress site and fix `/stat
 - Done: added a clean article-link block at the top of `/stati/` with 15 direct working links, bypassing old Elementor click-layer issues.
 - Done: updated restored article pages with site-style menu, callback button, breadcrumbs, Open Graph and Twitter SEO fields.
 - Done: prepared `restaration-by1-fixed-articles` as the clean GitHub Desktop working folder.
-- Done: strengthened article page styling and added a versioned CSS link `article-pages.css?v=2` to avoid stale browser cache.
+- Reverted: removed the stronger custom article styling after visual review. Do not use that design.
+- To do: rebuild article page presentation using the existing site/Elementor-like layout instead of a separate custom article shell.
 - To do: check restored article pages on mobile after Vercel deploy.
 
 ## Important Article URLs To Restore
