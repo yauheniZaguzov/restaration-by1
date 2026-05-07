@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": true,
   "functions": {
     "api/telegram.js": {
       "runtime": "nodejs22.x"
