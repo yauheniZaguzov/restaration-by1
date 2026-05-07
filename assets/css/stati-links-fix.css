@@ -1,0 +1,77 @@
+.stati-index-fix {
+  background: #f7f9fb;
+  padding: 34px 16px 18px;
+}
+
+.stati-index-fix__inner {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.stati-index-fix h1 {
+  margin: 0 0 10px;
+  color: #111827;
+  font-family: Arial, sans-serif;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.08;
+}
+
+.stati-index-fix p {
+  max-width: 760px;
+  margin: 0 0 22px;
+  color: #52606d;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+}
+
+.stati-index-fix__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stati-index-fix__link {
+  display: flex;
+  align-items: center;
+  min-height: 76px;
+  padding: 16px 18px;
+  border: 1px solid #e5edf3;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.28;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(18, 32, 45, 0.06);
+}
+
+.stati-index-fix__link:hover,
+.stati-index-fix__link:focus {
+  border-color: #0ab7c9;
+  color: #047f8d;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .stati-index-fix__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .stati-index-fix {
+    padding: 24px 10px 12px;
+  }
+
+  .stati-index-fix__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stati-index-fix__link {
+    min-height: 62px;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
