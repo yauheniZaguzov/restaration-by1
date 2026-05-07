@@ -14,9 +14,15 @@
     toggle.classList.toggle('elementor-active', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+    menu.style.boxSizing = 'border-box';
+    menu.style.left = '0';
+    menu.style.right = '0';
+    menu.style.width = '100vw';
+    menu.style.maxWidth = '100vw';
     menu.style.maxHeight = open ? '100vh' : '0px';
     menu.style.transform = open ? 'scaleY(1)' : 'scaleY(0)';
     menu.style.overflowY = open ? 'auto' : 'hidden';
+    menu.style.overflowX = 'hidden';
 
     menu.querySelectorAll('a').forEach(function (link) {
       link.setAttribute('tabindex', open ? '0' : '-1');
